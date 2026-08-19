@@ -1,1 +1,108 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery - Sir Syed Academy Jokihat</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+        }
+
+        header {
+            background: #0b5d3b;
+            color: white;
+            text-align: center;
+            padding: 25px 10px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+
+        header p {
+            margin: 8px 0 0;
+            font-size: 16px;
+        }
+
+        .gallery-container {
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 0 15px;
+        }
+
+        .gallery-title {
+            text-align: center;
+            color: #0b5d3b;
+            margin-bottom: 25px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 18px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+            transition: transform 0.3s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.03);
+        }
+
+        footer {
+            margin-top: 40px;
+            background: #0b5d3b;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Sir Syed Academy Jokihat</h1>
+    <p>Photo Gallery</p>
+</header>
+
+<div class="gallery-container">
+
+    <h2 class="gallery-title">Our School Gallery</h2>
+
+    <div class="gallery">
+
+        <img src="images/gallery/photo1.jpg" alt="School Photo 1">
+
+        <img src="images/gallery/photo2.jpg" alt="School Photo 2">
+
+        <img src="images/gallery/photo3.jpg" alt="School Photo 3">
+
+        <img src="images/gallery/photo4.jpg" alt="School Photo 4">
+
+        <img src="images/gallery/photo5.jpg" alt="School Photo 5">
+
+        <img src="images/gallery/photo6.jpg" alt="School Photo 6">
+
+    </div>
+
+</div>
+
+<footer>
+    © 2026 Sir Syed Academy Jokihat. All Rights Reserved.
+</footer>
+
+</body>
+</html>
